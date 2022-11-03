@@ -1,6 +1,6 @@
 var x=89;
 
-if(x>100){
+if(x>100||x<0){
     document.write("invalid Data"+"<br>");
 }
 else if(x<50){
