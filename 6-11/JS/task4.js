@@ -4,5 +4,7 @@ for(let i=0;i<=100;i++){
     if(sum>100){
         document.write(sum +" at i: "+i );
         break;
+      
     }
+   
 }
