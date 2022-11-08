@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea{
+            display: block;
+         
+           
+            
+        }
+    </style>
+</head>
+<body>
+    <select id="fontstyle" onchange="changefont()">
+        <option value="Arial">Arial</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Tahoma">Tahoma</option>
+        <option value="Georgia">Georgia</option>
+    </select>
+   
+
+    <select id="fontsize" onchange="fontsize()">
+        <option value=12>12pt</option>
+        <option value=14>14pt</option>
+        <option value=16>16pt</option>
+        <option value=18>18pt</option>
+        <option value=20>20pt</option>
+        <option value=24>24pt</option>
+    </select>
+    
+    
+    <input type="checkbox" id="italic1" name="font-type1"  onchange="fontStyle1()"> <label for="italic">Italic</label>
+    <label for="Bold">Bold</label>
+    <input type="checkbox" id="Bold1" name="font-type2"  onchange="fontWeight1()">
+    <label for="underline">Underline</label>
+    <input type="checkbox" id="underline1" name="font-type3" onchange="">
+    
+
+
+    <textarea cols="30" rows="10"></textarea>
+    <script src="../JS/task3.js"></script>
+</body>
+</html>

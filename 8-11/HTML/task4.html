@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* form{display: inline;} */
+        #password{
+            margin: 10px 11px;
+        }
+        #confiermpassword{
+            margin: 0px 78px;   
+        }
+        #sub{
+
+            display: none;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <label for="passwoed">password(min 6 characters)</label>
+        <input type="password" id="password" onchange="pass()">
+        <span></span>
+        <br>
+        <label for="confiermpassword">Repeat Password</label>
+        <input type="password" id="confiermpassword" onchange="pass()">
+        <span></span><br>
+        <input type="submit" value="Submit" id="sub">
+    </form>
+    
+    
+    <script src="../JS/task4.js"></script>
+</body>
+</html>
