@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            display: flex;
+            justify-content: space-evenly;
+            display: flex;
+            justify-content: flex-start;
+            background-color: #b2b2b2;
+            width: 80%;
+            border: 2px solid blue;
+            box-shadow: 5px 5px 0.5px #aaa, 14px 16px 0.25px #eee;
+            visibility: hidden;
+            
+        }
+        .out{
+            font-size: 21px;
+            font-weight: bold;
+        }
+        #decrproj{
+            font-size: 18px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" onchange="project()">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject"><br>
+
+        <textarea placeholder="Description" id="description" cols="40" rows="15"></textarea><br>
+
+        <label for="usertypes">User Types:</label>
+        <input type="text" id="usertypes"><br>
+
+        <label for="Technologyused">Technology Used:</label>
+        <input type="checkbox" id="htmllang" name="language" value="HTML">
+        <label for="htmllang">HTML</label>
+
+        <input type="checkbox" id="csslang" name="language" value="CSS">
+        <label for="csslang">CSS</label>
+
+        <input type="checkbox" id="jslang" name="language" value="JAVASCRIPT">
+        <label for="jslang">JS</label>
+
+        <input type="checkbox" id="clang" name="language" value="C#">
+        <label for="clang">C#</label>
+
+        <input type="checkbox" id="phplang" name="language" value="PHP">
+        <label for="phplang">PHP</label>
+
+        <input type="checkbox" id="Mysgl" name="language" value="Mysgl">
+        <label for="Mysgl">Mysql</label><br>
+    </form>
+    <button onclick="out()">Submit</button>
+
+    <div class="cont">
+        <div class="image">
+            <img src="../image/user-icon.png" alt="">
+        </div>
+        <div class="out">
+            <p id="nmeobj">My project:</p>
+            <p >Description about my project:</p>
+            <p id="decrproj"></p>
+            <p id="Typesuser">user Types:</p>
+            <p id="technologyUsed">Technology Used:</p>
+        </div>
+    </div>
+
+
+    <script src="../JS/task2.js"></script>
+</body>
+
+</html>

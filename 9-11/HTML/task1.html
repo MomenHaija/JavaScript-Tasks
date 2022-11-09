@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            display: flex;
+            justify-content: space-evenly;
+            display: flex;
+            justify-content: flex-start;
+            background-color: #b2b2b2;
+            width: 80%;
+            border: 2px solid blue;
+            box-shadow: 5px 5px 0.5px #aaa, 14px 16px 0.25px #eee;
+            visibility: hidden;
+        }
+        .out{
+            font-size: 21px;
+            font-weight: bold;
+        }
+        #decrproj{
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+    </style>
+</head>
+<body>
+    <form onchange="meinfo()">
+
+
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br>
+
+
+        <label for="Age">Age:</label>
+        <input type="text" id="Age"><br>
+
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female">female</label><br>
+
+
+        <label for="Description"> Brief Description:</label><br>
+        <textarea name="" id="Description" cols="30" rows="10"></textarea><br>
+        
+        
+        <label for="major">Major:</label>
+        <input type="text" id="major"><br>
+        
+        
+        <label for="language">Programming Language:</label>
+        
+        <input type="checkbox" id="htmllang" name="language" value="HTML">
+        <label for="htmllang">HTML</label>
+        
+        <input type="checkbox" id="csslang" name="language" value="CSS">
+        <label for="csslang">CSS</label>
+        
+        <input type="checkbox" id="jslang" name="language" value="JAVASCRIPT">
+        <label for="jslang">JS</label>
+        
+        <input type="checkbox" id="clang" name="language" value="C++">
+        <label for="clang">C++</label>
+        
+        <input type="checkbox" id="phylang" name="language" value="Python">
+        <label for="phylang">Python</label>
+        
+        <input type="checkbox" id="phplang" name="language" value="PHP">
+        <label for="phplang">PHP</label><br>
+    </form>
+    <button onclick="out()">Submit</button>
+
+
+    <div class="cont">
+        <div class="image">
+            <img src="../image/user-icon.png" alt="">
+        </div>
+        <div class="out">
+            <p id="oname">Me Name is:</p>
+            <p id="oage">me Age:</p>
+            <p id="ogender">me Gender:</p>
+            <p>Decription about me</p>
+            <p id="odes"></p>
+            <p id="omajor">Me major:</p>
+            <p id="olang">i Know programming language:</p>
+        </div>
+    </div>
+    
+
+    <script src="../JS/task1.js"></script>
+</body>
+</html>

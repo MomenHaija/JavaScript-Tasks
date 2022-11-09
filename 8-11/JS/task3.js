@@ -68,14 +68,17 @@ function fontWeight1(){
 
 function textDecoration(){
     let jj1=document.getElementById("underline1").checked;
+  
     if(jj1){
-        document.getElementsByTagName("textarea")[0].style.textDecoration="underline";
+        document.getElementById("text").style.textDecoration="underline";
+        console.log(jj1);
     }
     else{
-        document.getElementsByTagName("textarea")[0].style.textDecoration="none";
+        document.getElementById("text").style.textDecoration="none";
 
     }
 
 }
+
 
 

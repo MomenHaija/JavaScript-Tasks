@@ -32,16 +32,16 @@
         <option value=24>24pt</option>
     </select>
     
-    
-    <input type="checkbox" id="italic1" name="font-type1"  onchange="fontStyle1()"> <label for="italic">Italic</label>
+    <label for="italic">Italic</label>
+    <input type="checkbox" id="italic1" name="font-type1"  onchange="fontStyle1()"> 
     <label for="Bold">Bold</label>
     <input type="checkbox" id="Bold1" name="font-type2"  onchange="fontWeight1()">
     <label for="underline">Underline</label>
-    <input type="checkbox" id="underline1" name="font-type3" onchange="">
+    <input type="checkbox" id="underline1" name="font-type3" onchange="textDecoration()">
     
 
 
-    <textarea cols="30" rows="10"></textarea>
+    <textarea cols="30" rows="10" id="text"></textarea>
     <script src="../JS/task3.js"></script>
 </body>
 </html>
